@@ -1,0 +1,11 @@
+# Ignore Psi4 output and scratch files
+*.dat
+*.molden
+*.clean
+timer.dat
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore Python cache
+__pycache__/

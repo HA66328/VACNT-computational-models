@@ -1,0 +1,373 @@
+
+Scratch directory: C:\Users\mkdha\AppData\Local\Temp/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  7, 6, -
+    Auxiliary basis highest AM E, G, H:  7, 7, -
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on Harshani
+*** at Fri Jun 19 13:07:20 2026
+
+   => Loading Basis Set <=
+
+    Name: DEF2-SVP
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-60, 78-81 entry C          line    90 file C:\Users\mkdha\miniconda3\envs\cnt_research\Library\share\psi4\basis\def2-svp.gbs 
+    atoms 61-76       entry H          line    15 file C:\Users\mkdha\miniconda3\envs\cnt_research\Library\share\psi4\basis\def2-svp.gbs 
+    atoms 77, 82      entry FE         line   698 file C:\Users\mkdha\miniconda3\envs\cnt_research\Library\share\psi4\basis\def2-svp.gbs 
+    atoms 83-85       entry CL         line   356 file C:\Users\mkdha\miniconda3\envs\cnt_research\Library\share\psi4\basis\def2-svp.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              UKS Reference
+                        1 Threads,   1144 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: Cs
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 50:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            3.074390183435     7.810000000000    -2.009973304808    12.000000000000
+         C            4.304146256809     7.100000000000    -2.009973304808    12.000000000000
+         C            4.304146256809     5.680000000000    -2.009973304808    12.000000000000
+         C            3.074390183435     4.970000000000    -2.009973304808    12.000000000000
+         C            3.074390183435     3.550000000000    -2.009973304808    12.000000000000
+         C            4.304146256809     2.840000000000    -2.009973304808    12.000000000000
+         C            4.304146256809     1.420000000000    -2.009973304808    12.000000000000
+         C            3.074390183435     0.710000000000    -2.009973304808    12.000000000000
+         C            3.074390183435    -0.710000000000    -2.009973304808    12.000000000000
+         C            4.304146256809    -1.420000000000    -2.009973304808    12.000000000000
+         C            4.304146256809    -2.840000000000    -2.009973304808    12.000000000000
+         C            3.074390183435    -3.550000000000    -2.009973304808    12.000000000000
+         C            3.074390183435    -4.970000000000    -2.009973304808    12.000000000000
+         C            4.304146256809    -5.680000000000    -2.009973304808    12.000000000000
+         C            4.304146256809    -7.100000000000    -2.009973304808    12.000000000000
+         C            3.074390183435    -7.810000000000    -2.009973304808    12.000000000000
+         C            0.614878036687     7.810000000000    -2.009973304808    12.000000000000
+         C            1.844634110061     7.100000000000    -2.009973304808    12.000000000000
+         C            1.844634110061     5.680000000000    -2.009973304808    12.000000000000
+         C            0.614878036687     4.970000000000    -2.009973304808    12.000000000000
+         C            0.614878036687     3.550000000000    -2.009973304808    12.000000000000
+         C            1.844634110061     2.840000000000    -2.009973304808    12.000000000000
+         C            1.844634110061     1.420000000000    -2.009973304808    12.000000000000
+         C            1.844634110061    -1.420000000000    -2.009973304808    12.000000000000
+         C            1.844634110061    -2.840000000000    -2.009973304808    12.000000000000
+         C            0.614878036687    -3.550000000000    -2.009973304808    12.000000000000
+         C            0.614878036687    -4.970000000000    -2.009973304808    12.000000000000
+         C            1.844634110061    -5.680000000000    -2.009973304808    12.000000000000
+         C            1.844634110061    -7.100000000000    -2.009973304808    12.000000000000
+         C            0.614878036687    -7.810000000000    -2.009973304808    12.000000000000
+         C           -1.844634110061     7.810000000000    -2.009973304808    12.000000000000
+         C           -0.614878036687     7.100000000000    -2.009973304808    12.000000000000
+         C           -0.614878036687     5.680000000000    -2.009973304808    12.000000000000
+         C           -1.844634110061     4.970000000000    -2.009973304808    12.000000000000
+         C           -1.844634110061     3.550000000000    -2.009973304808    12.000000000000
+         C           -0.614878036687     2.840000000000    -2.009973304808    12.000000000000
+         C           -1.844634110061     0.710000000000    -2.009973304808    12.000000000000
+         C           -1.844634110061    -0.710000000000    -2.009973304808    12.000000000000
+         C           -0.614878036687    -2.840000000000    -2.009973304808    12.000000000000
+         C           -1.844634110061    -3.550000000000    -2.009973304808    12.000000000000
+         C           -1.844634110061    -4.970000000000    -2.009973304808    12.000000000000
+         C           -0.614878036687    -5.680000000000    -2.009973304808    12.000000000000
+         C           -0.614878036687    -7.100000000000    -2.009973304808    12.000000000000
+         C           -1.844634110061    -7.810000000000    -2.009973304808    12.000000000000
+         C           -4.304146256809     7.810000000000    -2.009973304808    12.000000000000
+         C           -3.074390183435     7.100000000000    -2.009973304808    12.000000000000
+         C           -3.074390183435     5.680000000000    -2.009973304808    12.000000000000
+         C           -4.304146256809     4.970000000000    -2.009973304808    12.000000000000
+         C           -4.304146256809     3.550000000000    -2.009973304808    12.000000000000
+         C           -3.074390183435     2.840000000000    -2.009973304808    12.000000000000
+         C           -3.074390183435     1.420000000000    -2.009973304808    12.000000000000
+         C           -4.304146256809     0.710000000000    -2.009973304808    12.000000000000
+         C           -4.304146256809    -0.710000000000    -2.009973304808    12.000000000000
+         C           -3.074390183435    -1.420000000000    -2.009973304808    12.000000000000
+         C           -3.074390183435    -2.840000000000    -2.009973304808    12.000000000000
+         C           -4.304146256809    -3.550000000000    -2.009973304808    12.000000000000
+         C           -4.304146256809    -4.970000000000    -2.009973304808    12.000000000000
+         C           -3.074390183435    -5.680000000000    -2.009973304808    12.000000000000
+         C           -3.074390183435    -7.100000000000    -2.009973304808    12.000000000000
+         C           -4.304146256809    -7.810000000000    -2.009973304808    12.000000000000
+         H           -5.248113946934     7.265000000000    -2.009973304808     1.007825032230
+         H           -5.248113946934     5.515000000000    -2.009973304808     1.007825032230
+         H           -5.248113946934     3.005000000000    -2.009973304808     1.007825032230
+         H           -5.248113946934     1.255000000000    -2.009973304808     1.007825032230
+         H           -5.248113946934    -1.255000000000    -2.009973304808     1.007825032230
+         H           -5.248113946934    -3.005000000000    -2.009973304808     1.007825032230
+         H           -5.248113946934    -5.515000000000    -2.009973304808     1.007825032230
+         H           -5.248113946934    -7.265000000000    -2.009973304808     1.007825032230
+         H            5.248113946934     7.645000000000    -2.009973304808     1.007825032230
+         H            5.248113946934     5.135000000000    -2.009973304808     1.007825032230
+         H            5.248113946934     3.385000000000    -2.009973304808     1.007825032230
+         H            5.248113946934     0.875000000000    -2.009973304808     1.007825032230
+         H            5.248113946934    -0.875000000000    -2.009973304808     1.007825032230
+         H            5.248113946934    -3.385000000000    -2.009973304808     1.007825032230
+         H            5.248113946934    -5.135000000000    -2.009973304808     1.007825032230
+         H            5.248113946934    -7.645000000000    -2.009973304808     1.007825032230
+         FE           0.000000000000     0.000000000000     2.490026695192    55.934936330000
+         C            0.614878036687     0.710000000000     2.490026695192    12.000000000000
+         C            0.614878036687    -0.710000000000     2.490026695192    12.000000000000
+         C           -0.614878036687     1.420000000000     2.490026695192    12.000000000000
+         C           -0.614878036687    -1.420000000000     2.490026695192    12.000000000000
+         FE           0.000000000000     0.000000000000     7.590026695192    55.934936330000
+         CL           2.140000000000     0.000000000000     7.590026695192    34.968852682000
+         CL          -1.070000000000     1.853000000000     7.590026695192    34.968852682000
+         CL          -1.070000000000    -1.853000000000     7.590026695192    34.968852682000
+
+  Running in c1 symmetry.
+
+  Rotational constants: A =      0.00086  B =      0.00065  C =      0.00053 [cm^-1]
+  Rotational constants: A =     25.69793  B =     19.59114  C =     15.84331 [MHz]
+  Nuclear repulsion = 10867.692487298741980
+
+  Charge       = 0
+  Multiplicity = 50
+  Electrons    = 503
+  Nalpha       = 276
+  Nbeta        = 227
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is DF.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is SAD.
+  Energy threshold   = 1.00e-08
+  Density threshold  = 1.00e-08
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: DEF2-SVP
+    Blend: DEF2-SVP
+    Number of shells: 478
+    Number of basis functions: 1092
+    Number of Cartesian functions: 1169
+    Spherical Harmonics?: true
+    Max angular momentum: 3
+
+  ==> DFT Potential <==
+
+   => LibXC <=
+
+    Version 7.0.0
+    S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018) (10.1016/j.softx.2017.11.002)
+
+   => Composite Functional: PBE <= 
+
+    PBE GGA Exchange-Correlation Functional
+
+    J.P. Perdew et. al., Phys. Rev. Lett., 77(18), 3865-3868, 1996
+
+
+    Deriv               =              1
+    GGA                 =           TRUE
+    Meta                =          FALSE
+
+    Exchange Hybrid     =          FALSE
+    MP2 Hybrid          =          FALSE
+
+   => Exchange Functionals <=
+
+    1.0000     XC_GGA_X_PBE
+
+   => Correlation Functionals <=
+
+    1.0000     XC_GGA_C_PBE
+
+   => LibXC Density Thresholds  <==
+
+    XC_GGA_C_PBE:  1.00E-12 
+    XC_GGA_X_PBE:  1.00E-15 
+
+   => Molecular Quadrature <=
+
+    Radial Scheme          =       TREUTLER
+    Pruning Scheme         =           NONE
+    Nuclear Scheme         =       TREUTLER
+
+    Blocking Scheme        =         OCTREE
+    BS radius alpha        =              1
+    Pruning alpha          =              1
+    Radial Points          =             75
+    Spherical Points       =            302
+    Total Points           =        1696849
+    Total Blocks           =          11589
+    Max Points             =            256
+    Max Functions          =            417
+    Weights Tolerance      =       1.00E-15
+
+   => Loading Basis Set <=
+
+    Name: (DEF2-SVP AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1-60, 78-81 entry C          line   198 file C:\Users\mkdha\miniconda3\envs\cnt_research\Library\share\psi4\basis\def2-universal-jkfit.gbs 
+    atoms 61-76       entry H          line    18 file C:\Users\mkdha\miniconda3\envs\cnt_research\Library\share\psi4\basis\def2-universal-jkfit.gbs 
+    atoms 77, 82      entry FE         line  1978 file C:\Users\mkdha\miniconda3\envs\cnt_research\Library\share\psi4\basis\def2-universal-jkfit.gbs 
+    atoms 83-85       entry CL         line   986 file C:\Users\mkdha\miniconda3\envs\cnt_research\Library\share\psi4\basis\def2-universal-jkfit.gbs 
+
+  ==> Integral Setup <==
+
+  ==> DiskDFJK: Density-Fitted J/K Matrices <==
+
+    J tasked:                  Yes
+    K tasked:                   No
+    wK tasked:                  No
+    OpenMP threads:              1
+    Integrals threads:           1
+    Memory [MiB]:              772
+    Algorithm:                Disk
+    Integral Cache:           NONE
+    Schwarz Cutoff:          1E-12
+    Fitting Condition:       1E-10
+
+   => Auxiliary Basis Set <=
+
+  Basis Set: (DEF2-SVP AUX)
+    Blend: DEF2-UNIVERSAL-JKFIT
+    Number of shells: 1926
+    Number of basis functions: 6000
+    Number of Cartesian functions: 7235
+    Spherical Harmonics?: true
+    Max angular momentum: 6
+
+  Cached 0.7% of DFT collocation blocks in 0.082 [GiB].
+
+  Minimum eigenvalue in the overlap matrix is 7.9155943105E-05.
+  Reciprocal condition number of the overlap matrix is 1.1476534506E-05.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Superposition of Atomic Densities via on-the-fly atomic UHF (no occupation information).
+
+   -------------------------
+    Irrep   Nso     Nmo    
+   -------------------------
+     A       1092    1092 
+   -------------------------
+    Total    1092    1092
+   -------------------------
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-UKS iter SAD: -6351.31922842106360   -6.35132e+03   0.00000e+00 
+   @DF-UKS iter   1: -6314.55176347118686    3.67675e+01   6.68607e-03 DIIS/ADIIS
+   @DF-UKS iter   2: -5981.13531601276918    3.33416e+02   1.11812e-02 DIIS/ADIIS
+   @DF-UKS iter   3: -5828.65264380576536    1.52483e+02   1.74556e-02 DIIS/ADIIS
+   @DF-UKS iter   4: -6270.27968008188054   -4.41627e+02   8.03653e-03 DIIS/ADIIS
+   @DF-UKS iter   5: -6326.99325717009742   -5.67136e+01   5.12860e-03 DIIS/ADIIS
+   @DF-UKS iter   6: -6220.44338536477699    1.06550e+02   9.59672e-03 DIIS/ADIIS
+   @DF-UKS iter   7: -6213.63076275042840    6.81262e+00   8.20067e-03 DIIS/ADIIS
+   @DF-UKS iter   8: -6330.02743290097442   -1.16397e+02   3.66006e-03 DIIS/ADIIS
+   @DF-UKS iter   9: -6169.68004127660515    1.60347e+02   1.00061e-02 DIIS/ADIIS
+   @DF-UKS iter  10: -6305.96005206193877   -1.36280e+02   5.66585e-03 DIIS/ADIIS
+   @DF-UKS iter  11: -6325.28923809267326   -1.93292e+01   4.21715e-03 DIIS/ADIIS
+   @DF-UKS iter  12: -6316.55600973198489    8.73323e+00   4.84432e-03 DIIS/ADIIS
+   @DF-UKS iter  13: -6319.76694945359486   -3.21094e+00   4.57833e-03 DIIS/ADIIS
+   @DF-UKS iter  14: -6304.19037115358515    1.55766e+01   5.48105e-03 DIIS/ADIIS
+   @DF-UKS iter  15: -6294.44646844312865    9.74390e+00   6.02831e-03 DIIS/ADIIS
+   @DF-UKS iter  16: -6270.54614908191797    2.39003e+01   6.87608e-03 DIIS/ADIIS
+   @DF-UKS iter  17: -6226.79474416453104    4.37514e+01   9.22564e-03 DIIS/ADIIS
+   @DF-UKS iter  18: -6287.21232991842589   -6.04176e+01   7.04534e-03 DIIS/ADIIS
+   @DF-UKS iter  19: -6262.69496884499222    2.45174e+01   7.12712e-03 DIIS/ADIIS
+   @DF-UKS iter  20: -6276.44621680242562   -1.37512e+01   6.30348e-03 DIIS/ADIIS
+   @DF-UKS iter  21: -6288.22930105695013   -1.17831e+01   6.74200e-03 DIIS/ADIIS
+   @DF-UKS iter  22: -6227.07662292351233    6.11527e+01   7.73479e-03 DIIS/ADIIS
+   @DF-UKS iter  23: -6226.21849402218686    8.58129e-01   8.54980e-03 DIIS/ADIIS
+   @DF-UKS iter  24: -5968.39147622648306    2.57827e+02   1.24804e-02 DIIS/ADIIS
+   @DF-UKS iter  25: -6293.00981597190730   -3.24618e+02   5.71453e-03 DIIS/ADIIS
+   @DF-UKS iter  26: -6246.15940002597654    4.68504e+01   8.27919e-03 DIIS/ADIIS
+   @DF-UKS iter  27: -6293.07611194599667   -4.69167e+01   5.69340e-03 DIIS/ADIIS
+   @DF-UKS iter  28: -6207.53704670504794    8.55391e+01   8.45740e-03 DIIS/ADIIS
+   @DF-UKS iter  29: -6264.26824907183072   -5.67312e+01   7.12032e-03 DIIS/ADIIS
+   @DF-UKS iter  30: -6315.64958808954907   -5.13813e+01   4.41040e-03 DIIS/ADIIS
+   @DF-UKS iter  31: -6296.15070974964692    1.94989e+01   5.61387e-03 DIIS/ADIIS
+   @DF-UKS iter  32: -6308.45238902954225   -1.23017e+01   3.99200e-03 DIIS/ADIIS
+   @DF-UKS iter  33: -6067.97426235777857    2.40478e+02   8.56983e-03 DIIS/ADIIS
+   @DF-UKS iter  34: -6316.32789683621195   -2.48354e+02   3.52286e-03 DIIS/ADIIS
+   @DF-UKS iter  35: -6293.85983746032434    2.24681e+01   5.38038e-03 DIIS/ADIIS
+   @DF-UKS iter  36: -6308.53059240010498   -1.46708e+01   4.61430e-03 DIIS/ADIIS
+   @DF-UKS iter  37: -6304.64623823113379    3.88435e+00   5.06165e-03 DIIS/ADIIS
+   @DF-UKS iter  38: -6200.02606363936866    1.04620e+02   8.67413e-03 DIIS/ADIIS
+   @DF-UKS iter  39: -6212.17214656074702   -1.21461e+01   8.57698e-03 DIIS/ADIIS
+   @DF-UKS iter  40: -6222.78615456146508   -1.06140e+01   8.36557e-03 DIIS/ADIIS
+   @DF-UKS iter  41: -6254.62797973352917   -3.18418e+01   7.19228e-03 DIIS/ADIIS
+   @DF-UKS iter  42: -6280.17543291058519   -2.55475e+01   7.19923e-03 DIIS/ADIIS
+   @DF-UKS iter  43: -6211.27177837356066    6.89037e+01   8.51425e-03 DIIS/ADIIS
+   @DF-UKS iter  44: -6285.99166329331001   -7.47199e+01   6.01481e-03 DIIS/ADIIS
+   @DF-UKS iter  45: -5631.50502749217958    6.54487e+02   1.64781e-02 DIIS/ADIIS
+   @DF-UKS iter  46: -6016.97660854559945   -3.85472e+02   6.35428e-03 DIIS/ADIIS
+   @DF-UKS iter  47: -4862.89978639066248    1.15408e+03   1.54899e-02 DIIS/ADIIS
+   @DF-UKS iter  48: -5565.62201827405988   -7.02722e+02   1.70554e-02 DIIS/ADIIS
+   @DF-UKS iter  49: -6124.01394431120207   -5.58392e+02   1.05324e-02 DIIS/ADIIS
+   @DF-UKS iter  50: -6170.26393086980897   -4.62500e+01   8.34935e-03 DIIS/ADIIS
+   @DF-UKS iter  51: -6225.63569399070457   -5.53718e+01   7.48068e-03 DIIS/ADIIS
+   @DF-UKS iter  52: -6228.60931112519847   -2.97362e+00   7.27078e-03 DIIS/ADIIS
+   @DF-UKS iter  53: -5859.37348798976018    3.69236e+02   1.54298e-02 DIIS/ADIIS
+   @DF-UKS iter  54: -6201.89756906127786   -3.42524e+02   8.59989e-03 DIIS/ADIIS
+   @DF-UKS iter  55: -5341.01204848319685    8.60886e+02   1.46380e-02 DIIS/ADIIS
+   @DF-UKS iter  56: -6213.18593746057832   -8.72174e+02   9.52744e-03 DIIS/ADIIS
+   @DF-UKS iter  57: -2752.03760251110680    3.46115e+03   4.22013e-02 DIIS/ADIIS
+   @DF-UKS iter  58: -5575.30265946594227   -2.82327e+03   1.66264e-02 DIIS/ADIIS
+   @DF-UKS iter  59: -5944.74633385459038   -3.69444e+02   8.87995e-03 DIIS/ADIIS
+   @DF-UKS iter  60: -6110.62130118419373   -1.65875e+02   1.16742e-02 DIIS/ADIIS
+   @DF-UKS iter  61: -6304.43309687353485   -1.93812e+02   5.50260e-03 DIIS/ADIIS
+   @DF-UKS iter  62: -5758.69601701974170    5.45737e+02   1.79712e-02 DIIS/ADIIS
+   @DF-UKS iter  63: -6196.00131103886451   -4.37305e+02   1.01423e-02 DIIS/ADIIS
+   @DF-UKS iter  64: -6256.06213033202221   -6.00608e+01   6.62221e-03 DIIS/ADIIS
+   @DF-UKS iter  65: -6167.53615687331330    8.85260e+01   9.32546e-03 DIIS/ADIIS
+   @DF-UKS iter  66: -5886.49695571510529    2.81039e+02   1.22823e-02 DIIS/ADIIS
+   @DF-UKS iter  67: -6245.34030238817650   -3.58843e+02   6.80662e-03 DIIS/ADIIS
+   @DF-UKS iter  68: -6249.82992618718981   -4.48962e+00   6.55000e-03 DIIS/ADIIS
+   @DF-UKS iter  69: -6272.67207995140234   -2.28422e+01   6.01992e-03 DIIS/ADIIS
+   @DF-UKS iter  70: -5893.94256250825765    3.78730e+02   1.38303e-02 DIIS/ADIIS
+   @DF-UKS iter  71: -6274.55917911195684   -3.80617e+02   4.94065e-03 DIIS/ADIIS
+   @DF-UKS iter  72: -6147.25240494848094    1.27307e+02   1.23749e-02 DIIS/ADIIS
+   @DF-UKS iter  73: -6291.96691435543653   -1.44715e+02   6.30559e-03 DIIS/ADIIS
+   @DF-UKS iter  74: -6195.57566922044953    9.63912e+01   8.90448e-03 DIIS/ADIIS
+   @DF-UKS iter  75: -5946.66989460018249    2.48906e+02   1.51587e-02 DIIS/ADIIS
+   @DF-UKS iter  76: -6287.26975930328081   -3.40600e+02   5.49612e-03 DIIS/ADIIS
+   @DF-UKS iter  77: -6315.98325064788150   -2.87135e+01   4.86166e-03 DIIS/ADIIS
+   @DF-UKS iter  78: -6306.83440651059209    9.14884e+00   4.68916e-03 DIIS/ADIIS
+   @DF-UKS iter  79: -6331.70764037668960   -2.48732e+01   3.23821e-03 DIIS/ADIIS
+   @DF-UKS iter  80: -6278.04868921049820    5.36590e+01   6.18971e-03 DIIS/ADIIS
+   @DF-UKS iter  81: -6305.88467618799768   -2.78360e+01   4.78468e-03 DIIS/ADIIS
+   @DF-UKS iter  82: -5513.18922459549140    7.92695e+02   1.94264e-02 DIIS/ADIIS
+   @DF-UKS iter  83: -6077.50776385118206   -5.64319e+02   8.87138e-03 DIIS/ADIIS
+   @DF-UKS iter  84: -6282.83134509934916   -2.05324e+02   5.69437e-03 DIIS/ADIIS
+   @DF-UKS iter  85: -6247.49634797380077    3.53350e+01   7.64255e-03 DIIS/ADIIS
+   @DF-UKS iter  86: -6339.93586390657947   -9.24395e+01   1.59128e-03 DIIS/ADIIS
+   @DF-UKS iter  87: -6247.22433437857035    9.27115e+01   6.94329e-03 DIIS/ADIIS
+   @DF-UKS iter  88: -6325.75348106211550   -7.85291e+01   3.61642e-03 DIIS/ADIIS
+   @DF-UKS iter  89: -6340.98898578628541   -1.52355e+01   1.90897e-03 DIIS/ADIIS
+   @DF-UKS iter  90: -6326.36831253785567    1.46207e+01   3.87878e-03 DIIS/ADIIS
+   @DF-UKS iter  91: -6342.08412016591228   -1.57158e+01   1.34571e-03 DIIS/ADIIS
+   @DF-UKS iter  92: -6339.34890847711631    2.73521e+00   2.07326e-03 DIIS/ADIIS
+   @DF-UKS iter  93: -6343.37573288324620   -4.02682e+00   1.06695e-03 DIIS/ADIIS
+   @DF-UKS iter  94: -6340.31341792597868    3.06231e+00   1.96313e-03 DIIS/ADIIS
+   @DF-UKS iter  95: -6343.25830039819266   -2.94488e+00   9.32852e-04 DIIS/ADIIS
+   @DF-UKS iter  96: -6344.11530643099104   -8.57006e-01   5.33652e-04 DIIS/ADIIS
+   @DF-UKS iter  97: -6343.14376487714708    9.71542e-01   8.83534e-04 DIIS/ADIIS
+   @DF-UKS iter  98: -6344.26699131878286   -1.12323e+00   3.28869e-04 DIIS/ADIIS
+   @DF-UKS iter  99: -6343.58833918794153    6.78652e-01   7.12070e-04 DIIS/ADIIS
+   @DF-UKS iter 100: -6344.25868300530692   -6.70344e-01   3.49291e-04 DIIS/ADIIS
+
+PsiException: Could not converge SCF iterations in 100 iterations.
+
+  Failed to converge.
